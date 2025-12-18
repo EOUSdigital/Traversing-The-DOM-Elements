@@ -2,14 +2,14 @@
 
 ## Overview
 
-In this lesson you learn how to **move around the DOM tree starting from a known element**. Instead of always querying from `document`, you will:
+In this lesson, you learn how to **move around the DOM tree starting from a known element**. Instead of always querying from `document`, you will:
 
 - Go **up** to parent elements.
 - Go **down** to children.
 - Move **sideways** between siblings.
 - Use `closest()` to walk **upwards by selector**.
 
-This is essential for writing interactive, context-aware code (e.g. “from this clicked button, find its card, list, or section and update only that part of the UI”).
+This is essential for writing interactive, context-aware code (e.g., “from this clicked button, find its card, list, or section and update only that part of the UI”).
 
 ---
 
@@ -28,7 +28,7 @@ By completing this lesson, you will be able to:
    - Sideways (`nextElementSibling`, `previousElementSibling`)
 3. Use `Element.closest(selector)` to find the nearest ancestor that matches a CSS selector.
 4. Combine traversal with loops to:
-   - Start from one element (e.g. `.card.featured` or a button).
+   - Start from one element (e.g., `.card.featured` or a button).
    - Find related elements around it.
    - Apply classes, styles, or data attributes to those related elements.
 5. Describe how DOM traversal supports real application patterns like event delegation and component‑scoped updates.
@@ -65,7 +65,7 @@ module-07/
 - **index.html** – Page with:
   - A hero heading for Lesson 06.
   - A simple navigation list (`.nav-link .item`).
-  - Two task lists (e.g. “New Tasks” and “My Tasks”).
+  - Two task lists (e.g., “New Tasks” and “My Tasks”).
   - A grid section with `.card` and `.card.featured`.
   - A section with buttons (`.btn`).
 - **style.css** – Base layout + highlighting classes (e.g. `.sibling-highlight`, `.sibling-strong`, `.section-active`, `.grid-relative`).
@@ -193,7 +193,7 @@ Implement the following in `app.js`.
 
 ### Task 2 – Sibling Traversal in “My Tasks”
 
-1. Select the first task from the “My Tasks” list (for example in `#section4`):
+1. Select the first task from the “My Tasks” list (for example, in `#section4`):
 
    ```js
    const firstTask = document.querySelector("#section4 .tasks .task");
@@ -322,7 +322,7 @@ Then in `app.js`:
    - Toggle a class like `.card-selected` on that card only.
    - Optionally log or display which card was selected using a data attribute or the title.
 
-This challenge connects traversal directly to a very common pattern: **event delegation + component‑scoped updates**.
+This challenge directly connects traversal to a prevalent pattern: **event delegation + component-scoped updates**.
 
 ---
 
@@ -340,5 +340,3 @@ Use these questions to confirm your understanding (you can write answers in your
    - Clicking a button inside a card to update that card only.
    - Clicking a list item and highlighting only items in the same list.
    - Handling a click on a table row using only one event listener on the table.
-
-If you can answer these clearly and your `app.js` implementation for Tasks 1–4 works as expected in the browser, you have successfully completed **Module 07 – Lesson 06: Traversing the DOM – Elements**.
