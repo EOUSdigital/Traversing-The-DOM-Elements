@@ -6,11 +6,10 @@ Thumbs.db        # Windows
 *.log
 *.tmp
 
-# Editor settings (optional, if you don't want to track them)
-.vscode/
+# Editor settings
 .idea/
 
-# Environment / secret files (only if you ever create them)
+# Environment / secret files
 .env
 .env.*
 !.env.example
